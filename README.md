@@ -2,6 +2,7 @@
 ## Chrome extension for Freshdesk, built for use within Workato
 
 Sits neatly in the corner of the page:
+
 ![Workato Freshdesk Chrome Extension](http://g.recordit.co/ALamLrAj1M.gif)
 
 ## How to upload to Chrome webstore
