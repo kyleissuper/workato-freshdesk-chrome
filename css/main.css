@@ -1,0 +1,54 @@
+#workatoApp {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #f4f7f9;
+  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.23);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+  width: 290px;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px; }
+  #workatoApp a, #workatoApp .pin-action, #workatoApp .workato-timer {
+    cursor: pointer; }
+  #workatoApp a, #workatoApp span {
+    color: #565867; }
+
+.workato-timer {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  height: 50px;
+  justify-content: center; }
+  .workato-timer.on {
+    background: #1b989e; }
+  .workato-timer.off {
+    background: #cc0000; }
+
+.pin-item {
+  display: flex;
+  align-items: center; }
+  .pin-item .pin-link {
+    width: 220px;
+    max-width: 220px;
+    overflow-x: hidden;
+    text-decoration: none;
+    white-space: nowrap; }
+    .pin-item .pin-link:hover {
+      text-decoration: underline; }
+  .pin-item .pin-action {
+    font-weight: bold;
+    width: 50px; }
+    .pin-item .pin-action:hover {
+      text-decoration: underline; }
+  .pin-item > * {
+    padding: 6px 0 6px 11px;
+    display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,65 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+#workatoApp {
+  @include border-radius(5px);
+  background: #f4f7f9;
+  box-shadow: 0 6px 13px 0 rgba(0,0,0,.23);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+  width: 290px;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  a, .pin-action, .workato-timer {
+    cursor: pointer;
+  }
+  a, span {
+    color: #565867;
+  }
+}
+.workato-timer {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  height: 50px;
+  justify-content: center;
+  &.on {
+    background: #1b989e;
+  }
+  &.off {
+    background: #cc0000;
+  }
+}
+.pin-item {
+  display: flex;
+  align-items: center;
+  .pin-link {
+    width: 220px;
+    max-width: 220px;
+    overflow-x: hidden;
+    text-decoration: none;
+    white-space: nowrap;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .pin-action {
+    font-weight: bold;
+    width: 50px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  > * {
+    padding: 6px 0 6px 11px;
+    display: inline-block;
+  }
+}
