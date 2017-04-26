@@ -28,7 +28,7 @@ const api = {
   },
   isTicketPage() {
     const ticketPath = "https://support.workato.com/helpdesk/tickets/";
-    return document.URL.slice(0, 45) === ticketPath;
+    return document.URL.slice(0, 45) === ticketPath && document.URL.length > 45;
   },
   addPin() {
     const currentPage = api.thisPage();
