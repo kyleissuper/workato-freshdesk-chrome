@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Workato - Freshdesk",
-    "version": "6.2",
+    "version": "6.3",
     "description": "Makes Freshdesk better for customer success",
     "icons": {
         "16": "img/icon16.png",
